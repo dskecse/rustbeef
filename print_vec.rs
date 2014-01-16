@@ -1,12 +1,12 @@
 fn print_vec(v: &[int]) {
     for i in v.iter() {
-        println(i.to_str())  // automatic pointer dereference
+        println(i.to_str())
     }
 }
 
 fn print_vec_str(v: &[~str]) {
     for i in v.iter() {
-        println(*i)          // use manual dereferencing
+        println((*i).to_str())
     }
 }
 

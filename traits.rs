@@ -1,4 +1,4 @@
-fn print_vec<T>(v: &[T]) {
+fn print_vec<T: ToStr>(v: &[T]) {
     for i in v.iter() {
         println(i.to_str())
     }

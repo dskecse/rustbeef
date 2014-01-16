@@ -25,6 +25,8 @@ fn main() {
 
     println!("{:?}", m);                  // take a struct using :? format specifier
     println!("health: {:d}", m.health);
+
     m.attack();
+
     Monster::count();
 }
